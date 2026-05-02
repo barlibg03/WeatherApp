@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Времето</string>
+    <string name="search_hint">Търси град...</string>
+    <string name="use_my_location">Използвай моята локация</string>
+    <string name="refresh">Обнови</string>
+    <string name="no_internet">Няма интернет връзка</string>
+    <string name="city_not_found">Градът не е намерен</string>
+    <string name="loading">Зареждане...</string>
+    <string name="feels_like">Усеща се като</string>
+    <string name="humidity">Влажност</string>
+    <string name="wind">Вятър</string>
+    <string name="visibility">Видимост</string>
+    <string name="sunrise">Изгрев</string>
+    <string name="sunset">Залез</string>
+    <string name="hourly_forecast">По часове</string>
+    <string name="daily_forecast">5-дневна прогноза</string>
+    <string name="notification_title">Времето за днес</string>
+    <string name="good_morning">Добро утро!</string>
+</resources>

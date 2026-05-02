@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="bg_cloudy_end">#78909C</color>
+    <color name="bg_cloudy_start">#37474F</color>
+    <color name="bg_foggy_end">#B0BEC5</color>
+    <color name="bg_foggy_start">#607D8B</color>
+    <color name="bg_night_end">#1B2A4A</color>
+    <color name="bg_night_start">#0D1B2A</color>
+    <color name="bg_partly_end">#90A4AE</color>
+    <color name="bg_partly_start">#455A64</color>
+    <color name="bg_rainy_end">#5C6BC0</color>
+    <color name="bg_rainy_start">#1A237E</color>
+    <color name="bg_snowy_end">#81D4FA</color>
+    <color name="bg_snowy_start">#B3E5FC</color>
+    <color name="bg_stormy_end">#546E7A</color>
+    <color name="bg_stormy_start">#212121</color>
+    <color name="bg_sunny_end">#42A5F5</color>
+    <color name="bg_sunny_start">#1565C0</color>
+    <color name="black">#FF000000</color>
+    <color name="error_text">#FFCDD2</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <string name="app_name">Времето</string>
+    <string name="city_not_found">Градът не е намерен</string>
+    <string name="daily_forecast">5-дневна прогноза</string>
+    <string name="feels_like">Усеща се като</string>
+    <string name="good_morning">Добро утро!</string>
+    <string name="hourly_forecast">По часове</string>
+    <string name="humidity">Влажност</string>
+    <string name="loading">Зареждане...</string>
+    <string name="no_internet">Няма интернет връзка</string>
+    <string name="notification_title">Времето за днес</string>
+    <string name="refresh">Обнови</string>
+    <string name="search_hint">Търси град...</string>
+    <string name="sunrise">Изгрев</string>
+    <string name="sunset">Залез</string>
+    <string name="use_my_location">Използвай моята локация</string>
+    <string name="visibility">Видимост</string>
+    <string name="wind">Вятър</string>
+    <style name="Theme.WeatherApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
+    </style>
+</resources>

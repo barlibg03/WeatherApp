@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_hourly_forecast.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/bg_hour_card"
+    android:layout_marginEnd="8dp">
+
+    <TextView
+        android:id="@+id/tvHourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="#99FFFFFF"
+        android:textStyle="bold"
+        tools:text="10:00" />
+
+    <ImageView
+        android:id="@+id/ivHourIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginVertical="4dp"
+        android:contentDescription="Икона" />
+
+    <TextView
+        android:id="@+id/tvHourTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:text="18°" />
+
+</LinearLayout>

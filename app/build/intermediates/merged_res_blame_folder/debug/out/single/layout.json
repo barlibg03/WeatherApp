@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.weatherapp-mergeDebugResources-48:/layout/item_daily_forecast.xml",
+        "source": "com.example.weatherapp-main-51:/layout/item_daily_forecast.xml"
+    },
+    {
+        "merged": "com.example.weatherapp-mergeDebugResources-48:/layout/activity_main.xml",
+        "source": "com.example.weatherapp-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.weatherapp-mergeDebugResources-48:/layout/item_hourly_forecast.xml",
+        "source": "com.example.weatherapp-main-51:/layout/item_hourly_forecast.xml"
+    }
+]

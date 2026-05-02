@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основни цветове -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="error_text">#FFCDD2</color>
+
+    <!-- Фонове за различни видове времe -->
+    <!-- Слънчево -->
+    <color name="bg_sunny_start">#1565C0</color>
+    <color name="bg_sunny_end">#42A5F5</color>
+
+    <!-- Частично облачно -->
+    <color name="bg_partly_start">#455A64</color>
+    <color name="bg_partly_end">#90A4AE</color>
+
+    <!-- Облачно -->
+    <color name="bg_cloudy_start">#37474F</color>
+    <color name="bg_cloudy_end">#78909C</color>
+
+    <!-- Дъжд -->
+    <color name="bg_rainy_start">#1A237E</color>
+    <color name="bg_rainy_end">#5C6BC0</color>
+
+    <!-- Буря -->
+    <color name="bg_stormy_start">#212121</color>
+    <color name="bg_stormy_end">#546E7A</color>
+
+    <!-- Сняг -->
+    <color name="bg_snowy_start">#B3E5FC</color>
+    <color name="bg_snowy_end">#81D4FA</color>
+
+    <!-- Мъгла -->
+    <color name="bg_foggy_start">#607D8B</color>
+    <color name="bg_foggy_end">#B0BEC5</color>
+
+    <!-- Нощ -->
+    <color name="bg_night_start">#0D1B2A</color>
+    <color name="bg_night_end">#1B2A4A</color>
+
+    <!-- Material Design -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+</resources>

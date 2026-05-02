@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_daily_forecast.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Основен ред -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/tvDayName"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:text="Понеделник" />
+
+        <ImageView
+            android:id="@+id/ivDayIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:contentDescription="Икона" />
+
+        <TextView
+            android:id="@+id/tvDayHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:text="21°" />
+
+        <TextView
+            android:id="@+id/tvDayLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="15sp"
+            android:textColor="#80FFFFFF"
+            tools:text="11°" />
+
+        <ImageView
+            android:id="@+id/ivExpandArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_expand_more"
+            android:contentDescription="Разгъни" />
+
+    </LinearLayout>
+
+    <!-- Разделителна линия -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#20FFFFFF" />
+
+    <!-- Детайли (разгъваеми) -->
+    <LinearLayout
+        android:id="@+id/layoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#15000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Влажност -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ВЛАЖНОСТ" android:textColor="#80FFFFFF" android:textSize="10sp"
+                    android:textStyle="bold" android:letterSpacing="0.1"/>
+                <TextView android:id="@+id/tvDetailHumidity" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@android:color/white"
+                    android:textSize="14sp" android:textStyle="bold" tools:text="68%"/>
+            </LinearLayout>
+
+            <!-- Вятър -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ВЯТЪР" android:textColor="#80FFFFFF" android:textSize="10sp"
+                    android:textStyle="bold" android:letterSpacing="0.1"/>
+                <TextView android:id="@+id/tvDetailWind" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@android:color/white"
+                    android:textSize="14sp" android:textStyle="bold" tools:text="18 км/ч"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <!-- Валеж -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ВАЛЕЖ" android:textColor="#80FFFFFF" android:textSize="10sp"
+                    android:textStyle="bold" android:letterSpacing="0.1"/>
+                <TextView android:id="@+id/tvDetailPrecip" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@android:color/white"
+                    android:textSize="14sp" android:textStyle="bold" tools:text="30%"/>
+            </LinearLayout>
+
+            <!-- Описание -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ОПИСАНИЕ" android:textColor="#80FFFFFF" android:textSize="10sp"
+                    android:textStyle="bold" android:letterSpacing="0.1"/>
+                <TextView android:id="@+id/tvDetailDesc" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@android:color/white"
+                    android:textSize="14sp" android:textStyle="bold" tools:text="Облачно"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <!-- Изгрев -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🌅 ИЗГРЕВ" android:textColor="#80FFFFFF" android:textSize="10sp"
+                    android:textStyle="bold"/>
+                <TextView android:id="@+id/tvDetailSunrise" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@android:color/white"
+                    android:textSize="14sp" android:textStyle="bold" tools:text="06:23"/>
+            </LinearLayout>
+
+            <!-- Залез -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🌇 ЗАЛЕЗ" android:textColor="#80FFFFFF" android:textSize="10sp"
+                    android:textStyle="bold"/>
+                <TextView android:id="@+id/tvDetailSunset" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@android:color/white"
+                    android:textSize="14sp" android:textStyle="bold" tools:text="20:47"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
